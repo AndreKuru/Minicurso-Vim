@@ -1,0 +1,15 @@
+[submodule "dot_files/.vim/pack/colors/start/code-dark"]
+	path = dot_files/.vim/pack/colors/start/code-dark
+	url = https://github.com/tomasiser/vim-code-dark
+[submodule "dot_files/.vim/pack/colors/start/papercolor-theme"]
+	path = dot_files/.vim/pack/colors/start/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "dot_files/.vim/pack/plugins/start/airline"]
+	path = dot_files/.vim/pack/plugins/start/airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "dot_files/.vim/pack/plugins/start/jedi-vim"]
+	path = dot_files/.vim/pack/plugins/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+[submodule "dot_files/.vim/pack/syntax/start/python-syntax"]
+	path = dot_files/.vim/pack/syntax/start/python-syntax
+	url = https://github.com/vim-python/python-syntax

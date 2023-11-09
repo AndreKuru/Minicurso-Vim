@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/kuru/UFSC/Minicurso Vim/code/visual_mode'
+let g:netrw_dirhist_1='/home/kuru/.vim/plugged'
+let g:netrw_dirhist_0='/home/kuru/test'
+let g:netrw_dirhist_9='/home/kuru/UFSC/Curso C++'
+let g:netrw_dirhist_8='/mnt/data_HDD0/André/2022/Shogun - Total War/Diff/Historical Campaigns'
+let g:netrw_dirhist_7='/etc/openvpn/client'
+let g:netrw_dirhist_6='/home/kuru/Downloads/RE Classic/RE1/biohazard-mediakite-pc/BH1 MediaKite (Pre-installed) - PC/BH1 MediaKite (Pre-installed) - PC/Support/Readme'
+let g:netrw_dirhist_5='/home/kuru/.config/i3'
+let g:netrw_dirhist_4='/home/kuru/Downloads/practical-vim/macros'
+let g:netrw_dirhist_3='/home/kuru/Downloads/practical-vim'
