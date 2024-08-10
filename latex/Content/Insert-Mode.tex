@@ -1,0 +1,81 @@
+\section{Inserção}
+\begin{frame}{Nem tudo se transforma}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{widedescription}
+                \item \key{i}: \textbf{i}nsert text
+                \item \key{a}: \textbf{a}ppend text
+                \item \key{I}: \textbf{i}nsert text at the start of the line
+                \item \key{A}: \textbf{a}ppend text at the end of the line
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.4\textwidth}
+            \begin{widedescription}
+                \item \key{o}: \textbf{o}btain new line below
+                \item \key{O}: \textbf{o}btain new line above
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Correções rápidas}
+    \begin{widedescription}
+        \item \key{\sk{C-h}}: delete back one character (\key{\sk{BS}})
+        \item \key{\sk{C-w}}: delete back one \textbf{w}ord
+        \item \key{\sk{C-u}}: delete back to the start of line
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Transições}
+    \begin{widedescription}
+        \item \key{\sk{Esc}}: switch to Normal mode
+        \item \key{\sk{C-[}}: switch to Normal mode
+        \item \key{\sk{C-o}}: switch to Insert Normal mode
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Acessar registradores}
+    \begin{widedescription}
+        \item \key{\sk{C-r}\bk{register}}: "Insert the contents of a register."
+        \item \key{\bk{register}}:
+        \begin{description}
+            \item \key{+}:	the clipboard contents
+            \item \key{*}:	the clipboard contents (X11: primary selection)
+            \item \key{0}: contains the text from the most recent yank command
+            \item \key{1-9}: contains the text deleted in ascending order by \\ the most recent delete or change command
+            \item \key{=}: the expression register
+        \end{description}
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Inserir caracteres por código}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{widedescription}
+                \item \key{\sk{C-v}191}: ¿
+                \item \key{\sk{C-v}u00bf}: ¿
+                \item \key{\sk{C-v}u00b0}: °
+                \item \key{\sk{C-v}\{nondigit\}}: e.g. \key{\sk{Home}}
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.42\textwidth}
+            \begin{widedescription}
+                \item \key{\sk{C-k}\bk{char1}\bk{char2}}
+                \item \key{\sk{C-k}?I}: ¿
+                \item \key{\sk{C-k}12}: ½
+                \item \key{ga}: print the ascii value
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Mais um modo}
+    \begin{widedescription}
+        \item \key{R}: \textbf{R}eplace mode
+        \item \key{gR}: Virtual \textbf{R}eplace mode
+        \item \key{r}: \textbf{r}eplace single character
+        \item \key{gr}: virtual \textbf{r}eplace single character
+    \end{widedescription}
+\end{frame}

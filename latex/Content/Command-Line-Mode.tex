@@ -1,0 +1,95 @@
+\section{Linha de comando}
+
+\begin{frame}{Falando do ex}
+    \begin{widedescription}
+        \item \key{:print}: print current line
+        \item \key{:3print}: print line 3
+        \item \key{:2,4print}: print lines 2 to 4
+        \item \key{:'\textless ,'\textgreater print}: print lines selected from visual mode
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Comandos básicos}
+    \begin{columns}
+        \begin{column}{0.45\linewidth}
+            \begin{widedescription}
+                \item \key{:[range]print}
+                \item \key{:[range]join}
+                \item \key{:[range]copy \bk{address}}
+                \item \key{:[range]move \bk{address}}
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.56\textwidth}
+            \begin{widedescription}
+                \item \key{[range]}: \key{\bk{address}[,\bk{address}]}
+                \item \key{\bk{address}}: 
+                    \small
+                    \begin{description}
+                        \item \key{number}: absolute line number
+                        \item \key{.}: current line
+                        \item \key{\$}: last line in the file
+                        \item \key{\%}: current file
+                        \item \key{/\bk{pattern}[/]}: next line [...]
+                        \item \key{?\bk{pattern}[?]}: previous line [...]
+                    \end{description}
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Comandos básicos}
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+            \begin{widedescription}
+                \item \key{:[range]delete [x]}
+                \item \key{:[range]yank [x]}
+                \item \key{:[range]put [x]}
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{widedescription}
+                \item \key{[x]}: "[into register x]"
+                \begin{description}
+                    \item \key{a},\key{b},\key{c},\key{d},\key{e},\key{f},\key{g},\key{h}, \\
+                    \item \key{i},\key{j},\key{k},\key{l},\key{m},\key{n},\key{o},\key{p}, \\
+                    \item \key{q},\key{r},\key{s},\key{t},\key{u},\key{v},\key{w},\key{x}, \\
+                    \item \key{y},\key{z} \end{description}
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Os mais populares}
+    \begin{widedescription}
+        \item \key{:[range]normal \bk{address}}
+        \item \key{:[range]substitute/\bk{pattern}/\bk{string}/[flags]}
+        \item \key{:[range]global/\bk{pattern}/[cmd]}
+        \item \key{[cmd]}: command from command line
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Repetição é a chave}
+    \begin{widedescription}
+        \item \key{@:}: execute the last ex command
+        \item \key{@@}: execute the last \key{@}
+        \item \key{@\bk{register}}: execute the contents of register
+        \item \key{q}: record/stop macro
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Comandos externos}
+    \begin{widedescription}
+        \item \key{:shell}: start shell
+        \item \key{:!\bk{cmd}}: execute \key{\bk{cmd}} in the shell
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Comandos externos integrados com o arquivo atual}
+    \begin{widedescription}
+        \item \key{:read !\bk{cmd}}: execute \key{\bk{cmd}} in the shell \\ and put the output as text below cursor
+        \item \key{:[range]write !\bk{cmd}}: execute \key{\bk{cmd}} in the shell \\ with \key{[range]} lines as input
+        \item \key{:[range] !\bk{filter}}: execute \key{\bk{cmd}} in the shell \\ and put the output as text below cursor \\ with \key{[range]} lines as input
+    \end{widedescription}
+\end{frame}

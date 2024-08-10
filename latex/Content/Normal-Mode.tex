@@ -1,0 +1,196 @@
+\section{Normal}
+\begin{frame}{Comando ponto}
+    \begin{widedescription}
+    \centering
+        \item \key{.}: "Repeat last change [...]"
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Mudanças comuns}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{widedescription}
+                \item \key{x}: delete [count] char(s)
+                \item \key{s}: \textbf{s}ubstitute [count] char(s)
+                \item \key{[]}: "[...] are optional."
+                \item \key{[count]}: "An optional number that may precede the command to multiply or iterate the command."
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{widedescription}
+                \item \key{d\bk{motion}}: \textbf{d}elete
+                \item \key{c\bk{motion}}: \textbf{c}hange
+                \item \key{\bk{}}: "[...] must appear, but which can take a number of different values."
+                \item \key{\bk{motion}}:  "A command that moves the cursor."
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Movimentação na linha}
+    \begin{widedescription}
+        \item \key{0}: start of the line
+        \item \key{\$}: end of the line
+        \item \key{\^{}}: start non-blank of the line
+        \item \key{g\_}: end non-blank of the line
+    \end{widedescription}
+\end{frame}
+
+\begin{frame}{Movimentação através de palavras}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{widedescription}
+                \item \key{w}: \textbf{w}ord foward
+                \item \key{e}: word \textbf{e}nd foward
+                \item \key{b}: word \textbf{b}ackward
+                \item \key{ge}: word end backward
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \begin{widedescription}
+                %\item \textbf{word}: [A - z], [0 - 9] and \_
+                \item \textbf{word}: "[...] \\ letters, digits and underscores, \\
+                or a sequence of other non-blank characters [...]"
+                \item \textbf{blank characters}: "space and tab"
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Movimentação através de PALAVRAS}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{widedescription}
+                \item \key{W}: \textbf{W}ORD foward
+                \item \key{E}: WORD \textbf{e}nd foward
+                \item \key{B}: WORD \textbf{b}ackward
+                \item \key{gE}: WORD end backward
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.6\textwidth}
+            \begin{widedescription}
+                \item \textbf{WORD}: "[...] \\ sequence of non-blank characters [...]"
+                \item \textbf{blank characters}: "space and tab"
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Buscas dentro da linha}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{widedescription}
+            \item \key{f}: \textbf{f}ind char \\ to the right
+            \item \key{t}: \textbf{t}ill before char \\ to the right
+            \item \key{F}: \textbf{f}ind char \\ to the left
+            \item \key{T}: \textbf{t}ill after char \\ to the left
+            \end{widedescription}
+        \end{column}
+
+        \begin{column}{0.7\textwidth}
+           \begin{widedescription}
+               \item \key{;}: "Repeat latest f, t, F or T [...]"
+               \item \key{,}: "Repeat latest f, t, F or T \\ in opposite direction [...]"
+           \end{widedescription} 
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Buscas no arquivo}
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{widedescription}
+            \item \key{/}: search forward for the pattern
+            \item \key{?}: search backward for the pattern
+            \item \key{*}: search forward for the nearest word
+            \item \key{\#}: search backward for the nearest word
+            \end{widedescription}
+        \end{column}
+
+        \begin{column}{0.6\textwidth}
+           \begin{widedescription}
+               \item \key{n}: "Repeat latest "/" or "?" [...]"
+               \item \key{N}: "Repeat latest "/" or "?" \\ in opposite direction [...]"
+           \end{widedescription} 
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Operadores}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{widedescription}
+                \item \key{c}: \textbf{c}hange
+                \item \key{d}: \textbf{d}elete
+                \item \key{y}: \textbf{y}ank
+                \item \key{\textgreater}: shift right
+                \item \key{\textless}: shift left
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \begin{widedescription}
+                \item \key{=}: autoident
+                \item \key{g\~}: swap case
+                \item \key{gu}: make lowercase
+                \item \key{gU}: make uppercase
+                %\item \key{!}: Filter \{motion\} lines through an external program
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+%\begin{frame}{Comandos condensados}
+%    \begin{columns}
+%        \begin{column}{0.5\textwidth}
+%            \begin{widedescription}
+%                \item \key{C} = \key{c\$}
+%                \item \key{s} = \key{cl}
+%                \item \key{S} = \key{\^{}C}
+%            \end{widedescription}
+%        \end{column}
+%        
+%        \begin{column}{0.5\textwidth}
+%            \begin{widedescription}
+%                \item \key{I} = \key{\^{} i}
+%                \item \key{A} = \key{\$a}
+%                \item \key{o} = \key{A\sk{CR}}
+%                \item \key{O} = \key{ko}
+%            \end{widedescription}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
+
+\begin{frame}{Teclas especiais}
+    \begin{columns}
+        \begin{column}{0.35\textwidth}
+            \begin{widedescription}
+                \item \key{\sk{Enter}}: Enter
+                \item \key{\sk{Esc}}: Escape
+                \item \key{\sk{S-...}}: Shift + ...
+                \item \key{\sk{A-...}}: Alt + ...
+                \item \key{\sk{C-...}}: Ctrl + ...
+            \end{widedescription}
+        \end{column}
+        
+        \begin{column}{0.65\textwidth}
+            \begin{widedescription}
+                \item \key{\sk{CR}}: Carriage Return
+                \item \key{\sk{Up}}: Up arrow key
+                \item \key{\sk{S-Down}}: Shift + Down arrow key
+                \item \key{Ctrl-A}: Ctrl + a
+                \item \key{\sk{C-x}}: Ctrl + x
+            \end{widedescription}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Aritmética simples}
+    \begin{widedescription}
+        \item \key{\sk{C-a}}: \textbf{a}dd [count] to the number at or after the cursor
+        \item \key{\sk{C-x}}: subtract [count] to the number at or after the cursor
+    \end{widedescription}
+\end{frame}
