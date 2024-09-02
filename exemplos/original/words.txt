@@ -1,0 +1,4 @@
+Uma palavra pode conter números123 e até mesmo quantos_underscores_forem_necessários.
+Contudo outros sinais como os usados em expressões aritméticas (679+some_num+578.25+var1+var2+var3+var4+var5+var6) são considerados palavras diferentes, ainda que aglutinados são uma mesma palavra ~/!!*&.
+
+Uma PALAVRA inclue todo tipo de character não nulo (nulos sendo espaços e espaços tabulados)       ./this/is/only/a/WORD! and #this(is_another.WORD&)

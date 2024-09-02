@@ -1,0 +1,43 @@
+file    ex3/madlibs.txt
+author  Pedro Santi Binotto, André William Régis
+
+Exemplo 3.1: SUBSTITUIÇÃO DE TEXTO
+
+Excerpt from: "American Dad! Mad Libs":
+
+    "The Space Shuttle"
+
+    In 1981, the U.S launched the first real Space ______. It was
+                                                    NOUN
+
+    named "Columbia" and was piloted by two brave _____________.
+                                                   PLURAL NOUN
+
+    They had practiced ______________________ for two years and
+                        VERB ENDING IN "ING"
+
+    were expert _____________. Columbia took off from ______
+                 PLURAL NOUN                           CITY
+
+    using its powerful first-stage _____________ and soared off
+                                    PLURAL NOUN
+
+    ___________ blue ______. At an altitude of ________ feet,
+     ADJECTIVE        NOUN                      NUMBER
+
+    it went into orbit around the ______. For people watching from
+                                   NOUN
+
+    Earth, it was a/an ___________ sight to ______! Who could really
+                        ADJECTIVE            VERB
+
+    ______ that there were two _____________ in space? It was mind
+     VERB                       PLURAL NOUN
+
+    ______________________. After ________ orbits, the shuttle landed
+     VERB ENDING IN "ING"          NUMBER
+
+    ________ at an air force ______. It was a/an ___________ day for the
+     ADVERB                   NOUN                ADJECTIVE
+
+    U.S. space program.
