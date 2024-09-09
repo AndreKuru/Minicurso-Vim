@@ -1,0 +1,21 @@
+file    ex2/caesar.txt
+author  Pedro Santi Binotto, André William Régis
+
+Exemplo 2.1: EXPRESSÕES REGULARES
+
+Excerpt from: "Julius Caesar, From Wikipedia, the free encyclopedia":
+
+"In 60 BC, Caesar, Crassus, and Pompey formed the First Triumvirate, an informal 
+political alliance that dominated Roman politics for several years. Their attempts 
+to amass political power were opposed by many in the Senate, among them Cato the 
+Younger with the private support of Cicero. Caesar rose to become one of the most 
+powerful politicians in the Roman Republic through a string of military victories 
+in the Gallic Wars, completed by 51 BC, which greatly extended Roman territory. 
+During this time he both invaded Britain and built a bridge across the river Rhine.
+These achievements and the support of his veteran army threatened to eclipse the 
+standing of Pompey, who had realigned himself with the Senate after the death of 
+Crassus in 53 BC. With the Gallic Wars concluded, the Senate ordered Caesar to step 
+down from his military command and return to Rome. In 49 BC, Caesar openly defied 
+the Senate's authority by crossing the Rubicon and marching towards Rome at the 
+head of an army.[3] This began Caesar's civil war, which he won, leaving him in 
+a position of near-unchallenged power and influence in 45 BC."

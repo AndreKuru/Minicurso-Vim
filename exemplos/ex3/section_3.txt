@@ -1,0 +1,19 @@
+file    ex3/section_3.txt
+author  Pedro Santi Binotto, André William Régis
+
+Exemplo 3.1: SUBSTITUIÇÃO DE TEXTO
+
+Excerpt from: "The Project Gutenberg eBook of Faust [part 1]. Translated Into English in the Original Metres":
+
+O full and splendid Moon, whom I
+Have, from this desk, seen climb the sky
+So many a midnight,—would thy glow
+For the last time beheld my woe!
+Ever thine eye, most mournful friend,
+O’er books and papers saw me bend;
+But would that I, on mountains grand,
+Amid thy blessed light could stand,
+With spirits through mountain-caverns hover,
+Float in thy twilight the meadows over,
+And, freed from the fumes of lore that swathe me,
+To health in thy dewy fountains bathe me!

@@ -1,0 +1,123 @@
+\section{Buffers}
+\begin{frame}{\textit{Buffers, windows, tabs}}
+  \begin{widedescription}
+    \item \begin{quotation} \small\it
+      Summary: \\
+      \hspace{1em} A buffer is the in-memory text of a file. \\
+      \hspace{1em} A window is a viewport on a buffer. \\
+      \hspace{1em} A tab page is a collection of windows\cite{vimReferenceManual}. \\
+    \end{quotation}
+  \end{widedescription}
+\end{frame}
+
+\begin{frame}{\textit{Buffers} no Vim}
+  \begin{widedescription}
+    \item A window is a viewport onto a buffer.  You can use multiple windows on one buffer, or several windows on different buffers.
+    \item A buffer is a file loaded into memory for editing.  The original file remains unchanged until you write the buffer to the file\cite{vimReferenceManual}.
+  \end{widedescription}
+\end{frame}
+
+\begin{frame}{\textit{Buffers} no Vim}
+  A buffer can be in one of three states:
+  \begin{widedescription}
+    \item \textbf{active:} The buffer is displayed in a window. If there is a file for this buffer, it has been read 
+      into the buffer. The buffer may have been modified since then and thus be different from the file.
+
+    \item \textbf{hidden:} The buffer is not displayed. If there is a file for this buffer, it has been read into the
+      buffer. Otherwise it's the same as an active buffer, you just can't see it.
+
+    \item \textbf{inactive:} The buffer is not displayed and does not contain anything. Options for the buffer are
+      remembered if the file was once loaded. It can contain marks from the \key{shada} file.  But the buffer
+      doesn't contain text\cite{vimReferenceManual}.
+  \end{widedescription}
+\end{frame}
+
+\begin{frame}{Trabalhando com \textit{buffers}}
+  \begin{tabular}{ |p{1.5cm}||p{2cm}|p{1.5cm}|p{2cm}|  }
+  \hline
+    \multicolumn{4}{|c|}{Buffer states} \\
+  \hline
+    state & displayed in window & loaded & \key{:buffers} shows\\
+  \hline
+    active & yes & yes & 'a' \\
+    hidden & no & yes & 'h' \\
+    inactive & no & no & ' ' \\
+  \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Trabalhando com \textit{buffers}}
+  \begin{widedescription}
+    \item \key{:e}:   \textbf{e}dit file
+    \item \key{:bn}:  \textbf{b}uffer \textbf{n}ext
+    \item \key{:bp}:  \textbf{b}uffer \textbf{p}revious
+    \item \key{:bd}:  \textbf{b}uffer \textbf{d}elete
+    \item \key{:b[n]}: ex.: \textit{buffer\textbf{1}} \textit{buffer\textbf{2}}
+  \end{widedescription}
+\end{frame}
+
+\begin{frame}{\textit{Windows}: \textit{viewports} bara \textit{buffers}}
+  \begin{widedescription}
+    \item \key{:split}:   Divide horizontalmente a tela com uma nova janela; \\
+      \key{:split ./outro/arquivo.txt}
+    \item \key{:vsplit}:  Divide verticalmente a tela com uma nova janela; \\
+      \key{:vsplit ./outro/arquivo.txt}
+    \item \key{:close[n]}:   Fecha uma janela (janela ativa ou \key{[n]}); \\
+      \key{:close}, \key{:close 1}
+  \end{widedescription}
+\end{frame}
+
+\begin{frame}{\textit{Windows}: \textit{viewports} bara \textit{buffers}}
+  \begin{widedescription}
+    \item \key{\sk{C-W}s}:    \key{:split}
+    \item \key{\sk{C-W}v}:    \key{:vsplit}
+  \end{widedescription}
+  \vspace{1cm}
+  \textbf{Note:} All \key{CTRL-W} commands can also be executed with \key{:wincmd}, for those places where a Normal
+  mode command can't be used or is inconvenient\cite{vimReferenceManual}.
+\end{frame}
+
+\begin{frame}{\textit{Windows}: \textit{viewports} bara \textit{buffers}}
+  \begin{columns}
+    \begin{column}{0.5\linewidth}
+      \begin{widedescription}
+        \item \key{\sk{C-W}[hjkl]}: Move to window above/below/right of/left of current one.
+      \end{widedescription}
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      \begin{widedescription}
+        \item \key{\sk{C-W}[HJKL]}: Move window above/below/to the right/to the left.
+      \end{widedescription}
+    \end{column}
+  \end{columns}
+  \vspace{1cm}
+  \textbf{Note:} All \key{CTRL-W} commands can also be executed with \key{:wincmd}, for those places where a Normal
+  mode command can't be used or is inconvenient\cite{vimReferenceManual}.
+\end{frame}
+
+\begin{frame}{\textit{Tab-pages}}
+  \begin{widedescription}
+  \item A tab page holds one or more windows.  You can easily switch between tab
+  pages, so that you have several collections of windows to work on different
+  things\cite{vimReferenceManual}.
+  \end{widedescription}
+\end{frame}
+
+\begin{frame}{\textit{Tab-pages}}
+  \begin{columns}
+    \begin{column}{0.5\linewidth}
+      \begin{widedescription}
+        \item \key{:tabe}:   \textbf{tab e}dit
+        \item \key{:tabnew}: \textbf{tab new}
+        \item \key{:tabc}:   \textbf{tab c}lose
+      \end{widedescription}
+    \end{column}
+    \begin{column}{0.5\linewidth}
+      \begin{widedescription}
+        \item \key{:tabn}:   \textbf{tab n}ext
+        \item \key{:tabp}:   \textbf{tab p}revious
+        \item \key{:tabs}:   \textbf{tabs} (plural de tab)
+      \end{widedescription}
+    \end{column}
+  \end{columns}
+\end{frame}

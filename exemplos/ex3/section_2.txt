@@ -1,0 +1,23 @@
+file    ex3/section_2.txt
+author  Pedro Santi Binotto, André William Régis
+
+Exemplo 3.1: SUBSTITUIÇÃO DE TEXTO
+
+Excerpt from: "The Project Gutenberg eBook of Faust [part 1]. Translated Into English in the Original Metres":
+
+For this, all pleasure am I foregoing;
+I do not pretend to aught worth knowing,
+I do not pretend I could be a teacher
+To help or convert a fellow-creature.
+Then, too, I’ve neither lands nor gold,
+Nor the world’s least pomp or honor hold—
+No dog would endure such a curst existence!
+Wherefore, from Magic I seek assistance,
+That many a secret perchance I reach
+Through spirit-power and spirit-speech,
+And thus the bitter task forego
+Of saying the things I do not know,—
+That I may detect the inmost force
+Which binds the world, and guides its course;
+Its germs, productive powers explore,
+And rummage in empty words no more!
