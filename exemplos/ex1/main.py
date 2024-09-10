@@ -10,16 +10,16 @@
 #         < h       l >          A tecla l está à direita e move à direita.
 #               j                A tecla j se parece com uma seta para baixo.
 #               v
-# - Modo NORMAL
-# - Modo INSERT
-# - Modo VISUAL
-# - Modo COMMAND
+# - Modo NORMAL                                                             
+# - Modo INSERT                                                             
+# - Modo VISUAL                                                             
+# - Modo COMMAND                                                            
 
 def hello():
-  print("Hello, World!")
+    print("Hello, World!")
 
 def goodbye():
-  print("Goodbye!")
+    print("Goodbye!")
 
 def main():
     hello()
